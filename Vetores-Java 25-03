@@ -1,0 +1,124 @@
+package inventario_2;
+
+
+
+import java.util.Scanner;
+
+
+
+public class exercicio_1 {
+
+
+
+	public exercicio_1() {
+
+		
+
+	}
+
+		public static void main(String[] args) {
+
+			
+
+			Scanner le = new Scanner(System.in);
+
+			
+
+			final int N = 10;
+
+			int saldo[] = new int[N]; 
+
+			int soma = 0;
+
+			double media;
+
+			int i;
+
+			for (i = 0; i < N; i++) {
+
+				System.out.println("Saldo? ");
+
+				saldo[i] = le.nextInt();
+
+				soma = soma + saldo[i];
+
+			}
+
+		media = soma/N;
+
+		System.out.println("A media dos saldos são de = "+ media);
+
+		
+
+		System.out.println("\n\n Saldos acima da media");
+
+		for (i = 0; i <N; i++) {
+
+			if (saldo[i] > media)
+
+				System.out.println("\t Saldos acima da média: "+saldo[i]);
+
+			}
+
+		System.out.println("\n\n Saldos abaixo da media");
+
+		for (i = 0; i <N; i++) {
+
+			if (saldo[i] < media)
+
+				System.out.println("\t Saldos abaixo da média: "+saldo[i]);
+
+			}
+
+		
+
+	}
+
+
+
+}
+
+------------------------------------------------------------------
+
+FOR:
+
+
+
+package inventario;
+
+
+
+public class exercicio {
+
+
+
+	public exercicio() {
+
+		
+
+	}
+
+
+
+	public static void main(String[] args) {
+
+		int farenheit;
+
+		double celsius;
+
+	    for (farenheit=100; farenheit<=150; farenheit++){
+
+	    celsius= (double) 5/9 * (farenheit -32);
+
+	        System.out.printf("%s%d%s.1f/n","farenheit:", farenheit,"/t celsius: ", celsius);
+
+	    }
+
+
+
+	}
+
+
+
+}
+
